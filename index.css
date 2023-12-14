@@ -688,7 +688,7 @@ nav ul.active {
   #arc {
     width: 180px;
     height: 180px;
-    border: 4px solid purple;
+    border: 4px solid #EECF74;
     border-radius: 180px;
   }
   .icons {
