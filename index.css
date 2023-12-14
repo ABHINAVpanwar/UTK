@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+}
+
 #preloader {
   background-color: #000000;
   height: 100vh;
@@ -509,12 +513,6 @@ nav ul.active {
   text-align: center;
   font-size: 13px;
   cursor: default;
-}
-
-#S1,
-#S2 {
-  margin: 0;
-  padding: 0;
 }
 
 @media only screen and (min-width: 1600px) {
