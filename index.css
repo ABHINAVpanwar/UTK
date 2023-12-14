@@ -666,9 +666,8 @@ nav ul.active {
 @media only screen and (max-width: 600px) {
   #S2 {
     position: relative;
-    top: 100vh;
+    top: 160vh;
     width: 100%;
-    gap: 0px;
     height: 160vh;
   }
   #about {
