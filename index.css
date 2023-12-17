@@ -1497,6 +1497,10 @@ nav ul.active {
   color: #13aff0;
 }
 
+#three:hover {
+  color: #4f0900;
+}
+
 #four:hover {
   color: #13aff0;
 }
