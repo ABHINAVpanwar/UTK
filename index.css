@@ -87,11 +87,11 @@ nav a img {
   cursor: pointer;
 }
 nav ul a {
-  color: black;
+  color: white;
   font-weight: 600;
 }
 nav ul a:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   cursor: pointer;
 }
 #ham-menu {
@@ -139,7 +139,7 @@ nav ul.active {
 @media only screen and (max-width: 900px) {
   #ham-menu {
     display: block;
-    color: black;
+    color: white;
   }
   #ham-menu {
     font-size: 4rem;
@@ -256,7 +256,7 @@ nav ul.active {
 }
 
 #B1:hover {
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 gray;
   transform: translate(-4px, -4px);
 }
 
@@ -321,7 +321,7 @@ nav ul.active {
     padding: 8px 12px;
   }
   #B1:hover {
-    box-shadow: 8px 8px 0 #000;
+    box-shadow: 8px 8px gray;
     transform: translate(-8px, -8px);
   }
   #myVideo2 {
@@ -415,7 +415,7 @@ nav ul.active {
     padding: 8px 12px;
   }
   #B1:hover {
-    box-shadow: 8px 8px 0 #000;
+    box-shadow: 8px 8px 0 gray;
     transform: translate(-8px, -8px);
   }
   #myVideo2 {
@@ -536,7 +536,7 @@ nav ul.active {
   #arc {
     width: 290px;
     height: 290px;
-    border: 5px solid #e75555;
+    border: 5px solid #4f0900;
     border-radius: 290px;
   }
   .abouT {
@@ -574,7 +574,7 @@ nav ul.active {
   #arc {
     width: 240px;
     height: 240px;
-    border: 4px solid #e75555;
+    border: 4px solid #4f0900;
     border-radius: 240px;
   }
   .abouT {
@@ -612,7 +612,7 @@ nav ul.active {
   #arc {
     width: 260px;
     height: 260px;
-    border: 5px solid #e75555;
+    border: 5px solid #4f0900;
     border-radius: 260px;
   }
   .abouT {
@@ -650,7 +650,7 @@ nav ul.active {
   #arc {
     width: 220px;
     height: 220px;
-    border: 5px solid #e75555;
+    border: 5px solid #4f0900;
     border-radius: 220px;
   }
   .abouT {
@@ -688,7 +688,7 @@ nav ul.active {
   #arc {
     width: 180px;
     height: 180px;
-    border: 4px solid #e75555;
+    border: 4px solid #4f0900;
     border-radius: 180px;
   }
   .icons {
