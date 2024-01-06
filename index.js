@@ -266,6 +266,8 @@ const observer = new IntersectionObserver(
 // Observe the target element
 observer.observe(experienceElement);
 
+plus = document.getElementById("plus");
+
 function updateExperience() {
   const updateInterval = 2; // milliseconds
   const frames = Math.ceil(2000 / updateInterval); // 2000 ms for 2 seconds animation
@@ -279,6 +281,7 @@ function updateExperience() {
     } else {
       experienceElement.textContent = targetExperience; // Ensure the final value is exact
       clearInterval(update);
+      plus.style.display = "block";
     }
   }, updateInterval);
 }
