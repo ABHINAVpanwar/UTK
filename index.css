@@ -1430,11 +1430,21 @@ nav ul.active {
   }
 }
 
+#row {
+  display: flex;
+  flex-direction: row;
+  gap: 5px
+}
+
 .rising-number {
   font-size: 24px;
   font-weight: bold;
   animation: rise 3s ease-out;
   cursor: default;
+}
+
+#plus {
+  display: none;
 }
 
 #border1 {
