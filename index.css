@@ -537,7 +537,7 @@ nav ul.active {
   #arc {
     width: 290px;
     height: 290px;
-    border: 5px solid #4f0900;
+    border: 5px solid white;
     border-radius: 290px;
   }
   .abouT {
@@ -575,7 +575,7 @@ nav ul.active {
   #arc {
     width: 240px;
     height: 240px;
-    border: 4px solid #4f0900;
+    border: 4px solid white;
     border-radius: 240px;
   }
   .abouT {
@@ -613,7 +613,7 @@ nav ul.active {
   #arc {
     width: 260px;
     height: 260px;
-    border: 5px solid #4f0900;
+    border: 5px solid white;
     border-radius: 260px;
   }
   .abouT {
@@ -651,7 +651,7 @@ nav ul.active {
   #arc {
     width: 220px;
     height: 220px;
-    border: 5px solid #4f0900;
+    border: 5px solid white;
     border-radius: 220px;
   }
   .abouT {
@@ -689,7 +689,7 @@ nav ul.active {
   #arc {
     width: 180px;
     height: 180px;
-    border: 4px solid #4f0900;
+    border: 4px solid white;
     border-radius: 180px;
   }
   .icons {
@@ -1509,7 +1509,7 @@ nav ul.active {
 }
 
 #three:hover {
-  color: #4f0900;
+  color: white;
 }
 
 #four:hover {
