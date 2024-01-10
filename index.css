@@ -257,7 +257,7 @@ nav ul.active {
 }
 
 #B1:hover {
-  box-shadow: 4px 4px 0 gray;
+  box-shadow: 4px 4px 0 black;
   transform: translate(-4px, -4px);
 }
 
@@ -322,7 +322,7 @@ nav ul.active {
     padding: 8px 12px;
   }
   #B1:hover {
-    box-shadow: 8px 8px gray;
+    box-shadow: 8px 8px black;
     transform: translate(-8px, -8px);
   }
   #myVideo2 {
@@ -416,7 +416,7 @@ nav ul.active {
     padding: 8px 12px;
   }
   #B1:hover {
-    box-shadow: 8px 8px 0 gray;
+    box-shadow: 8px 8px 0 black;
     transform: translate(-8px, -8px);
   }
   #myVideo2 {
@@ -1235,7 +1235,7 @@ nav ul.active {
   #working {
     margin-bottom: 10vh;
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
     cursor: default;
   }
   #align {
@@ -1433,7 +1433,7 @@ nav ul.active {
 #row {
   display: flex;
   flex-direction: row;
-  gap: 5px
+  gap: 5px;
 }
 
 .rising-number {
