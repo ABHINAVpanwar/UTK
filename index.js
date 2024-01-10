@@ -270,8 +270,6 @@ function updateExperience() {
       experienceElement.textContent = targetExperience; // Ensure the final value is exact
       clearInterval(update);
       plus.style.display = "block";
-      experienceElement.style.color = "#ff6c68";
-      plus.style.color = "#ff6c68";
     }
   }, updateInterval);
 }
