@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
   this.document.getElementById("PL").style.display = "none";
 });
 
-document.addEventListener("load", function() {
+document.addEventListener("DOMContentLoaded", function() {
   var textElement = document.getElementById("T1");
   textElement.classList.add("animation");
   textElement.style.opacity = 1; // Set opacity to 1 to make the text visible
