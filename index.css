@@ -217,6 +217,22 @@ nav ul.active {
   gap: 50px;
 }
 
+@keyframes textDrop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animation {
+  opacity: 0;
+  animation: textDrop 3s ease-out;
+}
+
 #T1 {
   font-size: 4.5vw;
   color: white;
