@@ -138,18 +138,6 @@ funk.addEventListener("click", function () {
   //     "_blank"
   //   );
   // }
-  if (slideIndex == 5) {
-    window.open(
-      "https://utkarshpanwar11.artstation.com/projects/rAyL9L",
-      "_blank"
-    );
-  }
-  if (slideIndex == 6) {
-    window.open(
-      "https://www.youtube.com/watch?app=desktop&si=EeJdiwFJVKmTzFwe&fbclid=PAAabowrVq8C9yKBGYJE7NCiH3cpmzI12qUA0Mr4BoVlxP1Wd52N5j0D-I-A0&v=s2vZfC_sQ1k&feature=youtu.be",
-      "_blank"
-    );
-  }
 });
 
 portfolio = document.getElementById("portfolio");
@@ -211,12 +199,6 @@ cntr.addEventListener("click", function () {
     work4.style.display = "block";
     p4.play();
   }
-  // else if (slideIndex == 5) {
-  //   portfolio.style.display = "none";
-  //   btnl.style.display = "none";
-  //   btnr.style.display = "none";
-  //   cntr.innerHTML = "Hide";
-  // }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
