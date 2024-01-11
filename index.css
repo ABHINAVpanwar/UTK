@@ -461,6 +461,7 @@ nav ul.active {
   margin-top: 5vh;
   color: white;
   font-size: 30px;
+  cursor: default;
 }
 
 #midsec {
