@@ -1844,35 +1844,58 @@ nav ul.active {
   }
 }
 
+body {
+  display: grid;
+  place-items: center;
+}
+
 #S6 {
   position: relative;
   top: 100vh;
-  height: 800px;
+  height: 700px;
   width: 100%;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  gap: 40px;
 }
 
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 40px;
+#gallery {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 50s linear infinite;
 }
 
-.imgs {
-  height: 180px;
-  width: 360px;
-  cursor: pointer;
-  opacity: 0.6;
+@keyframes rotate {
+  from {
+    transform: perspective(1200px) rotateY(0deg);
+  }
+
+  to {
+    transform: perspective(1200px) rotateY(360deg);
+  }
 }
 
-.imgs:hover {
+#gallery span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+}
+
+#gallery span .imgs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+#gallery span .imgs:hover {
   cursor: pointer;
   opacity: 1;
   transition: all 1s;
@@ -1882,77 +1905,33 @@ nav ul.active {
   #S6 {
     position: relative;
     top: 100vh;
-    height: 1100px;
+    height: 1000px;
     width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 60px;
-    overflow: hidden;
   }
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 60px;
-  }
-
-  .imgs {
-    height: 220px;
-    width: 440px;
-    cursor: pointer;
-    opacity: 0.6;
-  }
-
-  .imgs:hover {
-    cursor: pointer;
-    opacity: 1;
-    transition: all 1s;
-  }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
-  #S6 {
+  #gallery {
     position: relative;
-    top: 100vh;
-    height: 900px;
+    width: 400px;
+    height: 270px;
+    transform-style: preserve-3d;
+    animation: rotate 50s linear infinite;
+  }
+
+  #gallery span {
+    position: absolute;
     width: 100%;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
-    overflow: hidden;
-  }
-
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 40px;
-  }
-
-  .imgs {
-    height: 180px;
-    width: 360px;
-    cursor: pointer;
-    opacity: 0.6;
-  }
-
-  .imgs:hover {
-    cursor: pointer;
-    opacity: 1;
-    transition: all 1s;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(510px);
   }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
+@media only screen and (min-width: 900px) and (max-width: 1600px) {
   #S6 {
     position: relative;
     top: 100vh;
@@ -1962,30 +1941,23 @@ nav ul.active {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    overflow: hidden;
   }
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 30px;
+  #gallery {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 50s linear infinite;
   }
 
-  .imgs {
-    height: 130px;
-    width: 260px;
-    cursor: pointer;
-    opacity: 0.6;
-  }
-
-  .imgs:hover {
-    cursor: pointer;
-    opacity: 1;
-    transition: all 1s;
+  #gallery span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(380px);
   }
 }
 
@@ -1993,36 +1965,29 @@ nav ul.active {
   #S6 {
     position: relative;
     top: 100vh;
-    height: 700px;
+    height: 400px;
     width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    overflow: hidden;
   }
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 20px;
+  #gallery {
+    position: relative;
+    width: 240px;
+    height: 160px;
+    transform-style: preserve-3d;
+    animation: rotate 50s linear infinite;
   }
 
-  .imgs {
-    height: 100px;
-    width: 200px;
-    cursor: pointer;
-    opacity: 0.6;
-  }
-
-  .imgs:hover {
-    cursor: pointer;
-    opacity: 1;
-    transition: all 1s;
+  #gallery span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(310px);
   }
 }
 
@@ -2030,36 +1995,59 @@ nav ul.active {
   #S6 {
     position: relative;
     top: 100vh;
-    height: 2200px;
+    height: 400px;
     width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    overflow: hidden;
   }
 
-  .row {
+  #gallery {
+    position: relative;
+    width: 195px;
+    height: 130px;
+    transform-style: preserve-3d;
+    animation: rotate 50s linear infinite;
+  }
+
+  #gallery span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #S6 {
+    position: relative;
+    top: 100vh;
+    height: 400px;
+    width: 100%;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 30px;
   }
 
-  .imgs {
-    height: 200px;
-    width: 400px;
-    cursor: pointer;
-    opacity: 0.6;
+  #gallery {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: rotate 50s linear infinite;
   }
 
-  .imgs:hover {
-    cursor: pointer;
-    opacity: 1;
-    transition: all 1s;
+  #gallery span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
   }
 }
 
@@ -2067,35 +2055,28 @@ nav ul.active {
   #S6 {
     position: relative;
     top: 100vh;
-    height: 1800px;
+    height: 300px;
     width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    overflow: hidden;
   }
 
-  .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
+  #gallery {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    transform-style: preserve-3d;
+    animation: rotate 50s linear infinite;
   }
 
-  .imgs {
-    height: 150px;
-    width: 300px;
-    cursor: pointer;
-    opacity: 0.6;
-  }
-
-  .imgs:hover {
-    cursor: pointer;
-    opacity: 1;
-    transition: all 1s;
+  #gallery span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
   }
 }
