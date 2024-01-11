@@ -1844,11 +1844,6 @@ nav ul.active {
   }
 }
 
-body {
-  display: grid;
-  place-items: center;
-}
-
 #S6 {
   position: relative;
   top: 100vh;
