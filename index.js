@@ -7,6 +7,40 @@ document.addEventListener("DOMContentLoaded", function () {
   var textElement = document.getElementById("T1");
   textElement.classList.add("animation");
   textElement.style.opacity = 1; // Set opacity to 1 to make the text visible
+
+  // Function to show the overlay and the div after a specific time
+  function showOverlayAndDiv() {
+    var overlay = document.getElementById("overlay");
+    var div = document.getElementById("S7");
+
+    overlay.style.display = "block";
+    div.style.display = "block";
+
+    // Trigger a reflow before adding the 'visible' class
+    overlay.offsetHeight;
+    div.offsetHeight;
+
+    overlay.style.filter = "blur(5px)"; // Adjust the blur intensity as needed
+    div.style.opacity = 1;
+  }
+
+  // Function to hide the overlay and the div
+  function hideOverlayAndDiv() {
+    var overlay = document.getElementById("overlay");
+    var div = document.getElementById("S7");
+
+    overlay.style.filter = "none";
+    overlay.style.display = "none";
+    div.style.display = "none";
+  }
+
+  // Call showOverlayAndDiv after a delay (e.g., 3000 milliseconds for 3 seconds)
+  setTimeout(showOverlayAndDiv, 8000);
+
+  // Add a click event listener to the overlay to hide it when clicked
+  document
+    .getElementById("overlay")
+    .addEventListener("click", hideOverlayAndDiv);
 });
 
 let hamMenuIcon = document.getElementById("ham-menu");
@@ -276,8 +310,16 @@ function updateExperience() {
 
 midsec = document.getElementById("midsec");
 arc = document.getElementById("arc");
-var color = ['#eb9191','#e0be99','#b4be89','#e49eff','#ac8fff','#f1c751','#fffdf6']; 
+var color = [
+  "#eb9191",
+  "#e0be99",
+  "#b4be89",
+  "#e49eff",
+  "#ac8fff",
+  "#f1c751",
+  "#fffdf6",
+];
 
-midsec.addEventListener('click', function() {
-  arc.style.borderColor  = color[Math.floor(Math.random() * color.length)];
+midsec.addEventListener("click", function () {
+  arc.style.borderColor = color[Math.floor(Math.random() * color.length)];
 });
