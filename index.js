@@ -276,7 +276,7 @@ function updateExperience() {
 
 midsec = document.getElementById("midsec");
 arc = document.getElementById("arc");
-var color = ['#eb9191','#e0be99','#b4be89','#e49eff','#ac8fff','#f1c751','#fffdf6','#d1062a']; 
+var color = ['#eb9191','#e0be99','#b4be89','#e49eff','#ac8fff','#f1c751','#fffdf6']; 
 
 midsec.addEventListener('click', function() {
   arc.style.borderColor  = color[Math.floor(Math.random() * color.length)];
