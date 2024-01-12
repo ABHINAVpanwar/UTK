@@ -84,7 +84,7 @@ nav a {
 }
 nav a img {
   height: 40px;
-  width: 70px;
+  width: 60px;
   cursor: pointer;
 }
 nav ul a {
@@ -110,7 +110,7 @@ nav ul.active {
   }
   nav a img {
     height: 70px;
-    width: 130px;
+    width: 105px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -122,7 +122,7 @@ nav ul.active {
   }
   nav a img {
     height: 55px;
-    width: 100px;
+    width: 83px;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
@@ -134,7 +134,7 @@ nav ul.active {
   }
   nav a img {
     height: 40px;
-    width: 70px;
+    width: 60px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -147,7 +147,7 @@ nav ul.active {
   }
   nav a img {
     height: 55px;
-    width: 100px;
+    width: 83px;
   }
   nav ul {
     background-color: transparent;
@@ -184,7 +184,7 @@ nav ul.active {
   }
   nav a img {
     height: 50px;
-    width: 90px;
+    width: 75px;
   }
 }
 
