@@ -83,7 +83,7 @@ nav a {
   }
 }
 nav a img {
-  height: 40px;
+  height: 46px;
   width: 60px;
   cursor: pointer;
 }
@@ -109,7 +109,7 @@ nav ul.active {
     font-size: 3rem;
   }
   nav a img {
-    height: 70px;
+    height: 80px;
     width: 105px;
   }
 }
@@ -133,7 +133,7 @@ nav ul.active {
     font-size: 2rem;
   }
   nav a img {
-    height: 40px;
+    height: 46px;
     width: 60px;
   }
 }
@@ -146,7 +146,7 @@ nav ul.active {
     font-size: 4rem;
   }
   nav a img {
-    height: 55px;
+    height: 63px;
     width: 83px;
   }
   nav ul {
@@ -183,7 +183,7 @@ nav ul.active {
     font-size: 3.5rem;
   }
   nav a img {
-    height: 50px;
+    height: 57px;
     width: 75px;
   }
 }
