@@ -142,10 +142,6 @@ document.getElementById("B1").addEventListener("click", function () {
   }
 });
 
-if (window.innerWidth > 900) {
-  hamMenuIcon.style.display = "none";
-}
-
 var slideIndex = 1;
 showDivs(slideIndex);
 
