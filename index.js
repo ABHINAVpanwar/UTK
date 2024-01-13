@@ -122,9 +122,7 @@ document.getElementById("B1").addEventListener("click", function () {
   if (video.style.display == "none") {
     t1.style.display = "none";
     t2.style.display = "none";
-    if (window.innerWidth <= 900) {
-      hamMenuIcon.style.display = "none";
-    }
+    hamMenuIcon.style.display = "none";
     video.style.display = "block";
     player.play();
     vide0.pause();
