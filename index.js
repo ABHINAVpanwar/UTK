@@ -32,6 +32,19 @@ document.addEventListener("DOMContentLoaded", function () {
     overlay.style.filter = "none";
     overlay.style.display = "none";
     div.style.display = "none";
+
+    setTimeout(function () {
+      Notification.requestPermission().then((perm) => {
+        if (perm == "granted") {
+          setTimeout(function () {
+            new Notification("Appreciate Your Visit!", {
+              body: "Thanks for stopping by My Website. Explore more or reach out if you need anything.",
+              icon: "./IMAGE/logo.jpg",
+            });
+          }, 3600000);
+        }
+      });
+    }, 5000);
   }
 
   // Call showOverlayAndDiv after a delay (e.g., 3000 milliseconds for 3 seconds)
