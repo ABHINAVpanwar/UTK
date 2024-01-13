@@ -122,7 +122,7 @@ document.getElementById("B1").addEventListener("click", function () {
   if (video.style.display == "none") {
     t1.style.display = "none";
     t2.style.display = "none";
-    if ((hamMenuIcon.style.display = "block")) {
+    if (window.innerWidth <= 900) {
       hamMenuIcon.style.display = "none";
     }
     video.style.display = "block";
@@ -132,7 +132,7 @@ document.getElementById("B1").addEventListener("click", function () {
   } else {
     t1.style.display = "block";
     t2.style.display = "block";
-    if ((hamMenuIcon.style.display = "none")) {
+    if (window.innerWidth <= 900) {
       hamMenuIcon.style.display = "block";
     }
     video.style.display = "none";
