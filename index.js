@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
               body: "Thanks for stopping by My Website. Explore more or reach out if you need anything.",
               icon: "./IMAGE/logo.jpg",
             });
-          }, 10000);
+          }, 5000);
         }
       });
     }, 5000);
