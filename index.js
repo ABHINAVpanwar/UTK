@@ -57,9 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 let hamMenuIcon = document.getElementById("ham-menu");
-if (window.innerWidth > 900) {
-  hamMenuIcon.style.display = "none";
-}
 let navBar = document.getElementById("nav-bar");
 let navLinks = navBar.querySelectorAll("li");
 t1 = document.getElementById("T1");
@@ -144,6 +141,10 @@ document.getElementById("B1").addEventListener("click", function () {
     this.innerHTML = "PLAY SHOWREEL";
   }
 });
+
+if (window.innerWidth > 900) {
+  hamMenuIcon.style.display = "none";
+}
 
 var slideIndex = 1;
 showDivs(slideIndex);
