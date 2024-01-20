@@ -1891,7 +1891,7 @@ nav ul.active {
 }
 
 #gallery span .imgs:hover {
-  cursor: pointer;
+  cursor: default;
 }
 
 @media only screen and (min-width: 1600px) {
