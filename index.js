@@ -63,10 +63,20 @@ t1 = document.getElementById("T1");
 t2 = document.getElementById("T2");
 B1 = document.getElementById("B1");
 DA = document.getElementById("DA");
+S2 = document.getElementById("S2");
+S3 = document.getElementById("S3");
+S4 = document.getElementById("S4");
+S5 = document.getElementById("S5");
+S6 = document.getElementById("S6");
 
 hamMenuIcon.addEventListener("click", () => {
   navBar.classList.toggle("active");
   hamMenuIcon.classList.toggle("fa-times");
+  S2.style.display = S2.style.display === "none" ? "flex" : "none";
+  S3.style.display = S3.style.display === "none" ? "flex" : "none";
+  S4.style.display = S4.style.display === "none" ? "flex" : "none";
+  S5.style.display = S5.style.display === "none" ? "flex" : "none";
+  S6.style.display = S6.style.display === "none" ? "flex" : "none";
   t1.style.display = t1.style.display === "none" ? "block" : "none";
   t2.style.display = t2.style.display === "none" ? "block" : "none";
   B1.style.display = B1.style.display === "none" ? "block" : "none";
@@ -80,6 +90,11 @@ navLinks.forEach((navLinks) => {
 });
 
 document.getElementById("clicked1").addEventListener("click", function () {
+  S2.style.display = S2.style.display === "none" ? "flex" : "none";
+  S3.style.display = S3.style.display === "none" ? "flex" : "none";
+  S4.style.display = S4.style.display === "none" ? "flex" : "none";
+  S5.style.display = S5.style.display === "none" ? "flex" : "none";
+  S6.style.display = S6.style.display === "none" ? "flex" : "none";
   t1.style.display = "block";
   t2.style.display = "block";
   B1.style.display = "block";
@@ -87,6 +102,11 @@ document.getElementById("clicked1").addEventListener("click", function () {
 });
 
 document.getElementById("clicked2").addEventListener("click", function () {
+  S2.style.display = S2.style.display === "none" ? "flex" : "none";
+  S3.style.display = S3.style.display === "none" ? "flex" : "none";
+  S4.style.display = S4.style.display === "none" ? "flex" : "none";
+  S5.style.display = S5.style.display === "none" ? "flex" : "none";
+  S6.style.display = S6.style.display === "none" ? "flex" : "none";
   t1.style.display = "block";
   t2.style.display = "block";
   B1.style.display = "block";
@@ -94,6 +114,11 @@ document.getElementById("clicked2").addEventListener("click", function () {
 });
 
 document.getElementById("clicked3").addEventListener("click", function () {
+  S2.style.display = S2.style.display === "none" ? "flex" : "none";
+  S3.style.display = S3.style.display === "none" ? "flex" : "none";
+  S4.style.display = S4.style.display === "none" ? "flex" : "none";
+  S5.style.display = S5.style.display === "none" ? "flex" : "none";
+  S6.style.display = S6.style.display === "none" ? "flex" : "none";
   t1.style.display = "block";
   t2.style.display = "block";
   B1.style.display = "block";
@@ -101,6 +126,11 @@ document.getElementById("clicked3").addEventListener("click", function () {
 });
 
 document.getElementById("clicked4").addEventListener("click", function () {
+  S2.style.display = S2.style.display === "none" ? "flex" : "none";
+  S3.style.display = S3.style.display === "none" ? "flex" : "none";
+  S4.style.display = S4.style.display === "none" ? "flex" : "none";
+  S5.style.display = S5.style.display === "none" ? "flex" : "none";
+  S6.style.display = S6.style.display === "none" ? "flex" : "none";
   t1.style.display = "block";
   t2.style.display = "block";
   B1.style.display = "block";
@@ -108,6 +138,11 @@ document.getElementById("clicked4").addEventListener("click", function () {
 });
 
 document.getElementById("clicked5").addEventListener("click", function () {
+  S2.style.display = S2.style.display === "none" ? "flex" : "none";
+  S3.style.display = S3.style.display === "none" ? "flex" : "none";
+  S4.style.display = S4.style.display === "none" ? "flex" : "none";
+  S5.style.display = S5.style.display === "none" ? "flex" : "none";
+  S6.style.display = S6.style.display === "none" ? "flex" : "none";
   t1.style.display = "block";
   t2.style.display = "block";
   B1.style.display = "block";
