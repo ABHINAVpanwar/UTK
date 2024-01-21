@@ -90,11 +90,13 @@ navLinks.forEach((navLinks) => {
 });
 
 document.getElementById("clicked1").addEventListener("click", function () {
-  S2.style.display = S2.style.display === "none" ? "flex" : "none";
-  S3.style.display = S3.style.display === "none" ? "flex" : "none";
-  S4.style.display = S4.style.display === "none" ? "flex" : "none";
-  S5.style.display = S5.style.display === "none" ? "flex" : "none";
-  S6.style.display = S6.style.display === "none" ? "flex" : "none";
+  if (window.innerWidth <= 900) {
+    S2.style.display = S2.style.display === "none" ? "flex" : "none";
+    S3.style.display = S3.style.display === "none" ? "flex" : "none";
+    S4.style.display = S4.style.display === "none" ? "flex" : "none";
+    S5.style.display = S5.style.display === "none" ? "flex" : "none";
+    S6.style.display = S6.style.display === "none" ? "flex" : "none";
+  }
   t1.style.display = "block";
   t2.style.display = "block";
   B1.style.display = "block";
@@ -102,11 +104,13 @@ document.getElementById("clicked1").addEventListener("click", function () {
 });
 
 document.getElementById("clicked2").addEventListener("click", function () {
-  S2.style.display = S2.style.display === "none" ? "flex" : "none";
-  S3.style.display = S3.style.display === "none" ? "flex" : "none";
-  S4.style.display = S4.style.display === "none" ? "flex" : "none";
-  S5.style.display = S5.style.display === "none" ? "flex" : "none";
-  S6.style.display = S6.style.display === "none" ? "flex" : "none";
+  if (window.innerWidth <= 900) {
+    S2.style.display = S2.style.display === "none" ? "flex" : "none";
+    S3.style.display = S3.style.display === "none" ? "flex" : "none";
+    S4.style.display = S4.style.display === "none" ? "flex" : "none";
+    S5.style.display = S5.style.display === "none" ? "flex" : "none";
+    S6.style.display = S6.style.display === "none" ? "flex" : "none";
+  }
   t1.style.display = "block";
   t2.style.display = "block";
   B1.style.display = "block";
@@ -114,11 +118,13 @@ document.getElementById("clicked2").addEventListener("click", function () {
 });
 
 document.getElementById("clicked3").addEventListener("click", function () {
-  S2.style.display = S2.style.display === "none" ? "flex" : "none";
-  S3.style.display = S3.style.display === "none" ? "flex" : "none";
-  S4.style.display = S4.style.display === "none" ? "flex" : "none";
-  S5.style.display = S5.style.display === "none" ? "flex" : "none";
-  S6.style.display = S6.style.display === "none" ? "flex" : "none";
+  if (window.innerWidth <= 900) {
+    S2.style.display = S2.style.display === "none" ? "flex" : "none";
+    S3.style.display = S3.style.display === "none" ? "flex" : "none";
+    S4.style.display = S4.style.display === "none" ? "flex" : "none";
+    S5.style.display = S5.style.display === "none" ? "flex" : "none";
+    S6.style.display = S6.style.display === "none" ? "flex" : "none";
+  }
   t1.style.display = "block";
   t2.style.display = "block";
   B1.style.display = "block";
@@ -126,11 +132,13 @@ document.getElementById("clicked3").addEventListener("click", function () {
 });
 
 document.getElementById("clicked4").addEventListener("click", function () {
-  S2.style.display = S2.style.display === "none" ? "flex" : "none";
-  S3.style.display = S3.style.display === "none" ? "flex" : "none";
-  S4.style.display = S4.style.display === "none" ? "flex" : "none";
-  S5.style.display = S5.style.display === "none" ? "flex" : "none";
-  S6.style.display = S6.style.display === "none" ? "flex" : "none";
+  if (window.innerWidth <= 900) {
+    S2.style.display = S2.style.display === "none" ? "flex" : "none";
+    S3.style.display = S3.style.display === "none" ? "flex" : "none";
+    S4.style.display = S4.style.display === "none" ? "flex" : "none";
+    S5.style.display = S5.style.display === "none" ? "flex" : "none";
+    S6.style.display = S6.style.display === "none" ? "flex" : "none";
+  }
   t1.style.display = "block";
   t2.style.display = "block";
   B1.style.display = "block";
@@ -138,11 +146,13 @@ document.getElementById("clicked4").addEventListener("click", function () {
 });
 
 document.getElementById("clicked5").addEventListener("click", function () {
-  S2.style.display = S2.style.display === "none" ? "flex" : "none";
-  S3.style.display = S3.style.display === "none" ? "flex" : "none";
-  S4.style.display = S4.style.display === "none" ? "flex" : "none";
-  S5.style.display = S5.style.display === "none" ? "flex" : "none";
-  S6.style.display = S6.style.display === "none" ? "flex" : "none";
+  if (window.innerWidth <= 900) {
+    S2.style.display = S2.style.display === "none" ? "flex" : "none";
+    S3.style.display = S3.style.display === "none" ? "flex" : "none";
+    S4.style.display = S4.style.display === "none" ? "flex" : "none";
+    S5.style.display = S5.style.display === "none" ? "flex" : "none";
+    S6.style.display = S6.style.display === "none" ? "flex" : "none";
+  }
   t1.style.display = "block";
   t2.style.display = "block";
   B1.style.display = "block";
