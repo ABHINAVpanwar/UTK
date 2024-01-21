@@ -83,8 +83,8 @@ nav a {
   }
 }
 nav a img {
-  height: 46px;
-  width: 60px;
+  height: 45px;
+  width: 55px;
   cursor: pointer;
 }
 nav ul a {
@@ -122,7 +122,7 @@ nav ul.active {
   }
   nav a img {
     height: 55px;
-    width: 83px;
+    width: 70px;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
@@ -133,8 +133,8 @@ nav ul.active {
     font-size: 2rem;
   }
   nav a img {
-    height: 46px;
-    width: 60px;
+    height: 45px;
+    width: 55px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -146,8 +146,8 @@ nav ul.active {
     font-size: 4rem;
   }
   nav a img {
-    height: 63px;
-    width: 83px;
+    height: 60px;
+    width: 75px;
   }
   nav ul {
     background-color: transparent;
@@ -183,8 +183,8 @@ nav ul.active {
     font-size: 3.5rem;
   }
   nav a img {
-    height: 57px;
-    width: 75px;
+    height: 55px;
+    width: 70px;
   }
 }
 
