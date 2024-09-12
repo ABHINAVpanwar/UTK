@@ -255,7 +255,7 @@ nav ul.active {
   grid-gap: 8px;
   align-items: center;
   background: 0 0;
-  border: 1px solid #000;
+  border: 1px solid #fff; /* White border */
   border-radius: 4px;
   cursor: pointer;
   display: inline-flex;
@@ -268,18 +268,27 @@ nav ul.active {
   padding: 8px 12px;
   text-decoration: none;
   text-overflow: ellipsis;
-  transition: all 0.14s ease-out;
+  transition: all 0.2s ease-out;
   white-space: nowrap;
   background-color: white;
+  color: black;
+  box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.6); /* Light shadow */
 }
 
-#B1:hover {
-  box-shadow: 4px 4px 0 black;
-  transform: translate(-4px, -4px);
+#B1:active {
+  animation: glow 0.5s ease-out forwards;
 }
 
-#B1:focus-visible {
-  outline-offset: 1px;
+@keyframes glow {
+  0% {
+    box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8); /* Bright white glow */
+  }
+  100% {
+    box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.6); /* Reset shadow */
+  }
 }
 
 #myVideo2 {
@@ -338,10 +347,6 @@ nav ul.active {
     line-height: 1.5;
     padding: 8px 12px;
   }
-  #B1:hover {
-    box-shadow: 8px 8px black;
-    transform: translate(-8px, -8px);
-  }
   #myVideo2 {
     height: 50vh;
     width: 70vw;
@@ -398,10 +403,6 @@ nav ul.active {
     line-height: 1.5;
     padding: 8px 12px;
   }
-  #B1:hover {
-    box-shadow: 8px 8px 0 #000;
-    transform: translate(-8px, -8px);
-  }
   #myVideo2 {
     height: 50vh;
     width: 70vw;
@@ -431,10 +432,6 @@ nav ul.active {
     gap: 8px;
     line-height: 1.5;
     padding: 8px 12px;
-  }
-  #B1:hover {
-    box-shadow: 8px 8px 0 black;
-    transform: translate(-8px, -8px);
   }
   #myVideo2 {
     height: 50vh;
