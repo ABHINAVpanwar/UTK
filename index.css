@@ -6,7 +6,11 @@
   box-sizing: border-box;
 }
 
-html,body {
+html {
+  overflow-x: hidden;
+}
+
+body {
   background-color: black;
   overflow-x: hidden;
 }
