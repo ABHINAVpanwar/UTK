@@ -10,7 +10,7 @@ html {
   overflow-x: hidden;
 }
 
-@media (max-height: 650px) {
+@media (max-height: 500px) {
   html,
   body {
     display: none;
