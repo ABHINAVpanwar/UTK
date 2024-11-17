@@ -1,13 +1,16 @@
 window.addEventListener("load", function () {
   this.document.getElementById("preloader").style.display = "none";
   this.document.getElementById("PL").style.display = "none";
+  var textElement = document.getElementById("T1");
+  var textElm = document.getElementById("T2");
+  textElement.classList.add("animation");
+  setTimeout(() => {
+    textElm.style.opacity = 1;
+    textElement.style.opacity = 1;
+  }, 0);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var textElement = document.getElementById("T1");
-  textElement.classList.add("animation");
-  textElement.style.opacity = 1; // Set opacity to 1 to make the text visible
-
   // Function to show the overlay and the div after a specific time
   function showOverlayAndDiv() {
     var overlay = document.getElementById("overlay");
@@ -386,4 +389,36 @@ var color = [
 
 midsec.addEventListener("click", function () {
   arc.style.borderColor = color[Math.floor(Math.random() * color.length)];
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = [
+    document.getElementById("about"),
+    document.getElementById("port"),
+    document.getElementById("working"),
+    document.getElementById("who-am-i"),
+    document.getElementById("what-i-do"),
+    document.getElementById("how-i-do"),
+    document.getElementById("where-am-i"),
+    document.getElementById("one"),
+    document.getElementById("two"),
+    document.getElementById("three"),
+    document.getElementById("four"),
+    document.getElementById("five"),
+
+  ];
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible"); // Add class to the observed element
+        }
+      });
+    },
+    { threshold: 0.5 } // Trigger when 50% of the element is visible
+  );
+
+  // Observe each element
+  elements.forEach((el) => observer.observe(el));
 });
