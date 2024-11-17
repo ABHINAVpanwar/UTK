@@ -463,7 +463,7 @@ nav ul.active {
   justify-content: center;
   flex-direction: column;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 #about {
