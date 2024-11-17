@@ -10,6 +10,13 @@ html {
   overflow-x: hidden;
 }
 
+@media (max-height: 650px) {
+  html,
+  body {
+    display: none;
+  }
+}
+
 body {
   background-color: black;
   overflow-x: hidden;
