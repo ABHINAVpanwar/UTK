@@ -462,6 +462,7 @@ nav ul.active {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 #about {
@@ -535,7 +536,6 @@ nav ul.active {
   justify-content: center;
   flex-direction: column;
   color: white;
-  overflow-x: hidden;
 }
 
 /* Animations for specific sections */
