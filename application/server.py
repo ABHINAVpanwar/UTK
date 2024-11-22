@@ -76,6 +76,9 @@ def index():
                 align-items: center;
                 height: 100vh;
                 cursor: default;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;  /* Ensures the body takes full height */
             }
             .container {
                 background-color: #fff;
@@ -84,6 +87,8 @@ def index():
                 width: 90%;
                 max-width: 1000px;
                 padding: 20px;
+                flex: 1;  /* Allows the container to take available space */
+                overflow: auto;  /* Scroll the container if content exceeds the height */
             }
             h1 {
                 text-align: center;
@@ -139,6 +144,20 @@ def index():
                 overflow-x: auto;
                 width: 100%;
             }
+            .fetch-button {
+                display: block;
+                margin: 20px auto;
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            .fetch-button:hover {
+                background-color: #45a049;
+            }
         </style>
     </head>
     <body>
@@ -169,6 +188,12 @@ def index():
                 </table>
             </div>
         </div>
+        <button class="fetch-button" onclick="fetchData()">Fetch</button>
+        <script>
+            function fetchData() {
+                location.reload();  // Reload the page when the "Fetch" button is clicked
+            }
+        </script>
     </body>
     </html>
     """
