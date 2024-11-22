@@ -1,0 +1,4 @@
+Flask
+Flask-cors
+flask_sqlalchemy
+os
