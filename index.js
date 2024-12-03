@@ -1,13 +1,94 @@
 window.addEventListener("load", function () {
-  this.document.getElementById("preloader").style.display = "none";
-  this.document.getElementById("PL").style.display = "none";
-  var textElement = document.getElementById("T1");
-  var textElm = document.getElementById("T2");
-  textElement.classList.add("animation");
-  setTimeout(() => {
-    textElm.style.opacity = 1;
-    textElement.style.opacity = 1;
-  }, 0);
+  // Hide preloader and manage animations
+  document.getElementById("preloader").style.display = "none";
+  document.getElementById("PL").style.display = "none";
+  const textElement = document.getElementById("T1");
+  const textElm = document.getElementById("T2");
+
+  if (textElement && textElm) {
+    textElement.classList.add("animation");
+    setTimeout(() => {
+      textElm.style.opacity = 1;
+      textElement.style.opacity = 1;
+    }, 0);
+  }
+
+  // IntersectionObserver logic
+  const elements = [
+    document.getElementById("about"),
+    document.getElementById("port"),
+    document.getElementById("working"),
+    document.getElementById("who-am-i"),
+    document.getElementById("what-i-do"),
+    document.getElementById("how-i-do"),
+    document.getElementById("where-am-i"),
+    document.getElementById("one"),
+    document.getElementById("two"),
+    document.getElementById("three"),
+    document.getElementById("four"),
+    document.getElementById("five"),
+    document.getElementById("adj1"),
+  ];
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible"); // Add class to the observed element
+        }
+      });
+    },
+    { threshold: 0.5 } // Trigger when 50% of the element is visible
+  );
+
+  // Observe each element
+  elements.forEach((el) => {
+    if (el) observer.observe(el);
+  });
+
+  // JavaScript to update the number and trigger the animation
+  const experienceElement = document.getElementById("experience");
+  const targetExperience = 5000;
+  let currentExperience = 0;
+
+  // Set up the Intersection Observer
+  const observer2 = new IntersectionObserver(
+    (entries, observer2) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Start the animation when the target element comes into view
+          experienceElement.style.animation = "rise 2s ease-out";
+          experienceElement.style.opacity = 1;
+          updateExperience();
+          observer2.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  ); // Adjust threshold as needed
+
+  // Observe the target element
+  observer2.observe(experienceElement);
+
+  plus = document.getElementById("plus");
+
+  function updateExperience() {
+    const updateInterval = 2; // milliseconds
+    const frames = Math.ceil(2000 / updateInterval); // 2000 ms for 2 seconds animation
+
+    const increment = targetExperience / frames;
+
+    const update = setInterval(() => {
+      if (currentExperience < targetExperience) {
+        experienceElement.textContent = Math.ceil(currentExperience);
+        currentExperience += increment;
+      } else {
+        experienceElement.textContent = targetExperience; // Ensure the final value is exact
+        clearInterval(update);
+        plus.style.display = "block";
+      }
+    }, updateInterval);
+  }
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -331,50 +412,6 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("nextBtn").addEventListener("click", nextSlide);
 });
 
-// JavaScript to update the number and trigger the animation
-const experienceElement = document.getElementById("experience");
-const targetExperience = 5000;
-let currentExperience = 0;
-
-// Set up the Intersection Observer
-const observer = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // Start the animation when the target element comes into view
-        experienceElement.style.animation = "rise 2s ease-out";
-        experienceElement.style.opacity = 1;
-        updateExperience();
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.5 }
-); // Adjust threshold as needed
-
-// Observe the target element
-observer.observe(experienceElement);
-
-plus = document.getElementById("plus");
-
-function updateExperience() {
-  const updateInterval = 2; // milliseconds
-  const frames = Math.ceil(2000 / updateInterval); // 2000 ms for 2 seconds animation
-
-  const increment = targetExperience / frames;
-
-  const update = setInterval(() => {
-    if (currentExperience < targetExperience) {
-      experienceElement.textContent = Math.ceil(currentExperience);
-      currentExperience += increment;
-    } else {
-      experienceElement.textContent = targetExperience; // Ensure the final value is exact
-      clearInterval(update);
-      plus.style.display = "block";
-    }
-  }, updateInterval);
-}
-
 midsec = document.getElementById("midsec");
 arc = document.getElementById("arc");
 var color = [
@@ -389,36 +426,4 @@ var color = [
 
 midsec.addEventListener("click", function () {
   arc.style.borderColor = color[Math.floor(Math.random() * color.length)];
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const elements = [
-    document.getElementById("about"),
-    document.getElementById("port"),
-    document.getElementById("working"),
-    document.getElementById("who-am-i"),
-    document.getElementById("what-i-do"),
-    document.getElementById("how-i-do"),
-    document.getElementById("where-am-i"),
-    document.getElementById("one"),
-    document.getElementById("two"),
-    document.getElementById("three"),
-    document.getElementById("four"),
-    document.getElementById("five"),
-
-  ];
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible"); // Add class to the observed element
-        }
-      });
-    },
-    { threshold: 0.5 } // Trigger when 50% of the element is visible
-  );
-
-  // Observe each element
-  elements.forEach((el) => observer.observe(el));
 });
