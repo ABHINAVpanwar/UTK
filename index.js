@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Call showOverlayAndDiv after a delay (e.g., 3000 milliseconds for 3 seconds)
-  setTimeout(showOverlayAndDiv, 10000);
+  // setTimeout(showOverlayAndDiv, 10000);
 
   // Add a click event listener to the overlay to hide it when clicked
   document
