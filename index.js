@@ -247,27 +247,47 @@ video = document.getElementById("myVideo2");
 var player = new Vimeo.Player(video);
 vide0 = document.getElementById("myVideo");
 
-document.getElementById("B1").addEventListener("click", function () {
-  if (video.style.display == "none") {
-    t1.style.display = "none";
-    t2.style.display = "none";
-    if (window.innerWidth <= 900) {
-      hamMenuIcon.style.display = "none";
+document.getElementById("B1").addEventListener("click", async function () {
+  try {
+    // Check current state
+    const isPlaying = video.style.display === "block";
+
+    if (!isPlaying) {
+      // Show video and hide other elements
+      video.style.display = "block";
+      t1.style.display = "none";
+      t2.style.display = "none";
+      if (window.innerWidth <= 900) {
+        hamMenuIcon.style.display = "none";
+      }
+
+      // Pause background video
+      vide0.pause();
+
+      // Ensure player is ready before playing
+      await player.ready();
+      await player.play();
+
+      this.innerHTML = "PAUSE SHOWREEL";
+    } else {
+      // Hide video and show other elements
+      video.style.display = "none";
+      t1.style.display = "block";
+      t2.style.display = "block";
+      if (window.innerWidth <= 900) {
+        hamMenuIcon.style.display = "block";
+      }
+
+      // Pause showreel and play background video
+      await player.pause();
+      vide0.play();
+
+      this.innerHTML = "PLAY SHOWREEL";
     }
-    video.style.display = "block";
-    player.play();
-    vide0.pause();
-    this.innerHTML = "PAUSE SHOWREEL";
-  } else {
-    t1.style.display = "block";
-    t2.style.display = "block";
-    if (window.innerWidth <= 900) {
-      hamMenuIcon.style.display = "block";
-    }
-    video.style.display = "none";
-    player.pause();
-    vide0.play();
-    this.innerHTML = "PLAY SHOWREEL";
+  } catch (error) {
+    console.error("Error controlling video:", error);
+    // Fallback behavior
+    video.style.display = video.style.display === "block" ? "none" : "block";
   }
 });
 
