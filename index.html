@@ -63,13 +63,26 @@
         allow="autoplay; fullscreen; picture-in-picture"
         allowfullscreen
       ></iframe>
-      <button id="B1">PLAY SHOWREEL</button>
+      <button id="B1" class="showreel-btn">
+        <span class="btn-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M8 5v14l11-7z" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="btn-text">PLAY SHOWREEL</span>
+        <span class="btn-border btn-border-top"></span>
+        <span class="btn-border btn-border-right"></span>
+        <span class="btn-border btn-border-bottom"></span>
+        <span class="btn-border btn-border-left"></span>
+      </button>
     </section>
     <div id="DA">
       <a href="#S2" class="down-arrow">&#9660;</a>
     </div>
     <section id="S2">
-      <h1 id="about">ABOUT ME</h1>
+      <div class="shadow-dance-container">
+        <h1 class="shadow-dance-text" id="about">ABOUT ME</h1>
+      </div>
       <div id="midsec">
         <div id="profile"></div>
         <div id="arc"></div>
@@ -233,10 +246,39 @@
       </div>
     </section>
     <section id="S4">
-      <h1 id="working">WORK</h1>
+      <div class="box">
+        <div class="inner">
+          <span id="working">WORK</span>
+        </div>
+        <div class="inner">
+          <span id="working">WORK</span>
+        </div>
+      </div>
       <div id="align">
         <button id="prevBtn">&#10094;</button>
         <div id="video-slideshow">
+          <div class="slide">
+            <iframe
+              class="s"
+              src="https://www.youtube.com/embed/iLEGrPo6zVc?si=eMhLQBRf-ceV1m4e"
+              width="640"
+              height="360"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="slide">
+            <iframe
+              class="s"
+              src="https://www.youtube.com/embed/Z0mnhCY7ofE?si=a2f7eHghDOTeO2Ma"
+              width="640"
+              height="360"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
           <div class="slide">
             <iframe
               class="s"
@@ -301,7 +343,9 @@
     </section>
     <section id="S5">
       <div class="cls">
-        <h1 id="adj1">Visual Fx Artist at Xentrix Studios</h1>
+        <h1 id="adj1" class="cursor typewriter-animation">
+          Visual Fx Artist at Xentrix Studios
+        </h1>
         <h2 id="adj2">Contact me and let's work together</h2>
       </div>
       <div class="cls" id="border1">
