@@ -163,7 +163,7 @@ hamMenuIcon.addEventListener("click", () => {
   S6.style.display = S6.style.display === "none" ? "flex" : "none";
   t1.style.display = t1.style.display === "none" ? "block" : "none";
   t2.style.display = t2.style.display === "none" ? "block" : "none";
-  B1.style.display = B1.style.display === "none" ? "block" : "none";
+  B1.style.display = B1.style.display === "none" ? "flex" : "none";
   DA.style.display = DA.style.display === "none" ? "flex" : "none";
 });
 navLinks.forEach((navLinks) => {
