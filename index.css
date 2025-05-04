@@ -24,7 +24,7 @@ body {
   justify-content: center;
 }
 
-.loader {
+#PL {
   border: 8px solid #f3f3f3;
   border-top: 8px solid #44874f;
   border-radius: 50%;
@@ -34,8 +34,12 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .overlay {
