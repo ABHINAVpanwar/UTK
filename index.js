@@ -249,11 +249,12 @@ vide0 = document.getElementById("myVideo");
 
 document.getElementById("B1").addEventListener("click", async function () {
   try {
-    // Check current state
+    // Hide the button while loading
+    this.style.display = "none";
+
     const isPlaying = video.style.display === "block";
 
     if (!isPlaying) {
-      // Show video and hide other elements
       video.style.display = "block";
       t1.style.display = "none";
       t2.style.display = "none";
@@ -261,16 +262,13 @@ document.getElementById("B1").addEventListener("click", async function () {
         hamMenuIcon.style.display = "none";
       }
 
-      // Pause background video
       vide0.pause();
 
-      // Ensure player is ready before playing
       await player.ready();
       await player.play();
 
       this.innerHTML = "PAUSE SHOWREEL";
     } else {
-      // Hide video and show other elements
       video.style.display = "none";
       t1.style.display = "block";
       t2.style.display = "block";
@@ -278,16 +276,20 @@ document.getElementById("B1").addEventListener("click", async function () {
         hamMenuIcon.style.display = "block";
       }
 
-      // Pause showreel and play background video
       await player.pause();
       vide0.play();
 
       this.innerHTML = "PLAY SHOWREEL";
     }
+
+    // Show the button again after processing
+    this.style.display = "inline-block";
   } catch (error) {
     console.error("Error controlling video:", error);
-    // Fallback behavior
     video.style.display = video.style.display === "block" ? "none" : "block";
+
+    // Make sure the button becomes visible again even if error occurs
+    this.style.display = "inline-block";
   }
 });
 
