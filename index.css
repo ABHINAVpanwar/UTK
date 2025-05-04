@@ -1355,23 +1355,23 @@ nav ul.active {
   }
   #work1 {
     display: none;
-    height: 200px;
-    width: 400px;
+    height: 250px;
+    width: 450px;
   }
   #work2 {
     display: none;
-    height: 200px;
-    width: 400px;
+    height: 250px;
+    width: 450px;
   }
   #work3 {
     display: none;
-    height: 200px;
-    width: 400px;
+    height: 250px;
+    width: 450px;
   }
   #work4 {
     display: none;
-    height: 200px;
-    width: 400px;
+    height: 250px;
+    width: 450px;
   }
 }
 
@@ -1429,23 +1429,23 @@ nav ul.active {
   }
   #work1 {
     display: none;
-    height: 160px;
-    width: 300px;
+    height: 200px;
+    width: 90vw;
   }
   #work2 {
     display: none;
-    height: 160px;
-    width: 300px;
+    height: 200px;
+    width: 90vw;
   }
   #work3 {
     display: none;
-    height: 160px;
-    width: 300px;
+    height: 200px;
+    width: 90vw;
   }
   #work4 {
     display: none;
-    height: 160px;
-    width: 300px;
+    height: 200px;
+    width: 90vw;
   }
 }
 
