@@ -183,7 +183,7 @@ document.getElementById("clicked1").addEventListener("click", function () {
   }
   t1.style.display = "block";
   t2.style.display = "block";
-  B1.style.display = "block";
+  B1.style.display = "flex";
   DA.style.display = "flex";
 });
 
@@ -197,7 +197,7 @@ document.getElementById("clicked2").addEventListener("click", function () {
   }
   t1.style.display = "block";
   t2.style.display = "block";
-  B1.style.display = "block";
+  B1.style.display = "flex";
   DA.style.display = "flex";
 });
 
@@ -211,7 +211,7 @@ document.getElementById("clicked3").addEventListener("click", function () {
   }
   t1.style.display = "block";
   t2.style.display = "block";
-  B1.style.display = "block";
+  B1.style.display = "flex";
   DA.style.display = "flex";
 });
 
@@ -225,7 +225,7 @@ document.getElementById("clicked4").addEventListener("click", function () {
   }
   t1.style.display = "block";
   t2.style.display = "block";
-  B1.style.display = "block";
+  B1.style.display = "flex";
   DA.style.display = "flex";
 });
 
@@ -239,7 +239,7 @@ document.getElementById("clicked5").addEventListener("click", function () {
   }
   t1.style.display = "block";
   t2.style.display = "block";
-  B1.style.display = "block";
+  B1.style.display = "flex";
   DA.style.display = "flex";
 });
 
