@@ -536,20 +536,20 @@ nav ul.active {
     gap: 60px;
   }
   #T1 {
-    font-size: 8vw;
+    font-size: 10vw;
   }
   #T2 {
-    font-size: 3.5vw;
+    font-size: 5vw;
   }
   #B1 {
     outline: 0;
-    grid-gap: 8px;
-    border-radius: 4px;
+    grid-gap: 10px;
+    border-radius: 5px;
     flex-shrink: 0;
-    font-size: 2.2vw;
-    gap: 8px;
+    font-size: 3vw;
+    gap: 10px;
     line-height: 1.5;
-    padding: 8px 12px;
+    padding: 10px 15px;
   }
   #myVideo2 {
     height: 60vh;
@@ -1487,7 +1487,7 @@ nav ul.active {
 .section-title {
   color: white;
   font-family: sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 30px 0 15px;
   text-align: center;
   width: 100%;
@@ -1621,10 +1621,19 @@ nav ul.active {
   }
 }
 
+#working {
+  font-size: 50px;
+  cursor: default;
+}
+
 /* ===== Responsive Adjustments ===== */
 @media (max-width: 1200px) {
   #gallery-container {
     padding: 20px 15px;
+  }
+  #working {
+    font-size: 30px;
+    cursor: default;
   }
 }
 
@@ -1668,11 +1677,6 @@ nav ul.active {
   #gallery-container {
     padding: 15px 10px;
   }
-}
-
-#working {
-  font-size: 30px;
-  cursor: default;
 }
 
 .box {
