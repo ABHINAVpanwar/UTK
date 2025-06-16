@@ -1469,8 +1469,8 @@ nav ul.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Changed from center to start */
-  padding: 40px 0 10px; /* Reduced bottom padding */
+  justify-content: flex-start;
+  padding: 40px 0 10px;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -1481,7 +1481,33 @@ nav ul.active {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  flex: 1 0 auto; /* Prevents container from growing */
+  flex: 1 0 auto;
+}
+
+.section-title {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  margin: 30px 0 15px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Scrollable Masha and Bear Gallery */
+.scrollable-gallery {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.horizontal-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  padding: 10px 0;
+  width: max-content;
+  min-width: 100%;
 }
 
 /* Video Gallery Grid */
@@ -1497,21 +1523,24 @@ nav ul.active {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin: 0; /* Removed default margins */
+  margin: 0;
 }
 
 /* Video Items */
 .video-item {
-  flex: 1;
-  min-width: 300px;
-  max-width: 500px;
+  flex: 0 0 auto;
+  width: 300px;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   background: #111;
-  margin-bottom: 0; /* Ensures no extra space */
+  margin-bottom: 0;
+}
+
+.horizontal-scroll .video-item {
+  flex-shrink: 0;
 }
 
 .video-wrapper {
@@ -1542,7 +1571,7 @@ nav ul.active {
 /* WORK Animation Styles */
 .box {
   display: flex;
-  margin: 0 auto 5vh; /* Reduced bottom margin */
+  margin: 0 auto 5vh;
   width: fit-content;
 }
 
@@ -1554,7 +1583,7 @@ nav ul.active {
   font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
-  margin: 0; /* Removed default margins */
+  margin: 0;
 }
 
 .box .inner:first-child {
@@ -1607,7 +1636,7 @@ nav ul.active {
   }
 
   .video-item {
-    min-width: 100%;
+    width: 100%;
     max-width: 100%;
   }
 
@@ -1621,6 +1650,14 @@ nav ul.active {
     width: 150px;
     height: 75px;
     line-height: 75px;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .video-item {
+    width: 280px;
   }
 
   .video-caption {
