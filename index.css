@@ -1576,7 +1576,7 @@ nav ul.active {
 }
 
 .box .inner {
-  width: 200px;
+  width: 280px;
   height: 100px;
   line-height: 100px;
   font-family: sans-serif;
@@ -1656,7 +1656,7 @@ nav ul.active {
 
 @media (max-width: 480px) {
   .box .inner {
-    width: 150px;
+    width: 180px;
     height: 75px;
     line-height: 75px;
   }
@@ -1666,7 +1666,7 @@ nav ul.active {
   }
 
   .video-item {
-    width: 280px;
+    width: 300px;
   }
 
   .video-caption {
@@ -1676,76 +1676,6 @@ nav ul.active {
 
   #gallery-container {
     padding: 15px 10px;
-  }
-}
-
-.box {
-  display: flex;
-  margin-bottom: 10vh;
-}
-
-.box .inner {
-  width: 200px;
-  height: 100px;
-  line-height: 100px;
-  font-family: sans-serif;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.box .inner:first-child {
-  background-color: transparent;
-  transform-origin: right;
-  transform: perspective(100px) rotateY(-15deg);
-  border-right: 2px solid white;
-  border-left: 2px solid white;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  background-color: #0f0f0f;
-  color: gray;
-}
-
-.box .inner:last-child {
-  background-color: transparent;
-  transform-origin: left;
-  transform: perspective(100px) rotateY(15deg);
-  border-right: 2px solid white;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  background-color: #0f0f0f;
-  color: white;
-}
-
-.box .inner span {
-  position: absolute;
-  animation: marquee 5s linear infinite;
-}
-
-.box .inner:first-child span {
-  animation-delay: 2.5s;
-  left: -100%;
-}
-
-@keyframes marquee {
-  from {
-    left: 100%;
-  }
-
-  to {
-    left: -100%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .box .inner {
-    width: 100px;
-    height: 50px;
-    line-height: 50px;
-    font-family: sans-serif;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
   }
 }
 
