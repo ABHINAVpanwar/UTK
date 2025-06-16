@@ -20,6 +20,7 @@ body {
   position: fixed;
   z-index: 100000;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -31,6 +32,59 @@ body {
   width: 80px;
   height: 80px;
   animation: spin 1s linear infinite;
+  margin-bottom: 30px;
+}
+
+#developer-credit {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: fadeIn 2s ease-in-out;
+  cursor: pointer;
+}
+
+#developer-credit:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+#developer-credit::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #44874f;
+  transition: width 0.3s;
+  margin: 5px auto 0;
+}
+
+#developer-credit:hover::after {
+  width: 100%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes spin {
