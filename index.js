@@ -501,3 +501,9 @@ if (isMobileDevice()) {
 } else {
   console.log("Not running on mobile device");
 }
+
+document
+  .getElementById("developer-credit")
+  .addEventListener("click", function () {
+    window.open("https://abhinavpanwar.netlify.app", "_blank"); // Replace with your actual portfolio URL
+  });
