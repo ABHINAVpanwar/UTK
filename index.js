@@ -420,3 +420,84 @@ var color = [
 midsec.addEventListener("click", function () {
   arc.style.borderColor = color[Math.floor(Math.random() * color.length)];
 });
+
+// ===== 1. Enhanced Mobile Detection =====
+function isMobileDevice() {
+  // Check multiple mobile indicators
+  const hasTouch =
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0;
+
+  const isSmallScreen = window.innerWidth <= 768; // More standard mobile breakpoint
+
+  const isMobileUA =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+
+  console.log("Mobile check:", { hasTouch, isSmallScreen, isMobileUA });
+  return hasTouch && (isSmallScreen || isMobileUA);
+}
+
+// ===== 2. Create Warning Overlay =====
+function createOrientationWarning() {
+  const warning = document.createElement("div");
+  warning.id = "orientation-warning";
+
+  Object.assign(warning.style, {
+    display: "none",
+    position: "fixed",
+    top: "0",
+    left: "0",
+    width: "100%",
+    height: "100%",
+    backgroundColor: "#000",
+    color: "white",
+    textAlign: "center",
+    paddingTop: "20vh",
+    zIndex: "9999",
+    fontFamily: "system-ui, sans-serif",
+    fontSize: "clamp(18px, 4vw, 24px)",
+  });
+
+  const message = document.createElement("div");
+  message.innerHTML = "Please rotate your device<br>to portrait mode";
+  message.style.lineHeight = "1.5";
+  warning.appendChild(message);
+
+  document.body.appendChild(warning);
+  return warning;
+}
+
+// ===== 3. Main Execution =====
+if (isMobileDevice()) {
+  console.log("Running on mobile device");
+
+  const warning = createOrientationWarning();
+
+  function checkOrientation() {
+    const isLandscape = window.matchMedia("(orientation: landscape)").matches;
+    console.log("Orientation check:", isLandscape ? "Landscape" : "Portrait");
+
+    if (isLandscape) {
+      warning.style.display = "block";
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      warning.style.display = "none";
+      document.documentElement.style.overflow = "";
+    }
+  }
+
+  // Initial check
+  checkOrientation();
+
+  // Event listeners
+  window.addEventListener("orientationchange", checkOrientation);
+  window.addEventListener("resize", checkOrientation);
+
+  // Add debug styles to make body visible during testing
+  document.body.style.minHeight = "100vh";
+} else {
+  console.log("Not running on mobile device");
+}
