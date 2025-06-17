@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
   // Hide preloader and manage animations
-  document.getElementById("preloader").style.display = "flex";
-  document.getElementById("PL").style.display = "flex";
+  document.getElementById("preloader").style.display = "none";
+  document.getElementById("PL").style.display = "none";
   const textElement = document.getElementById("T1");
   const textElm = document.getElementById("T2");
 
