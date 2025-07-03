@@ -8,9 +8,9 @@ const letters = [
 function playAnimation() {
   letters.forEach((letter, index) => {
     setTimeout(() => {
-      const beat = sound.cloneNode();
-      beat.play().catch(() => {});
-      // sound.play().catch(() => {}); for THQ.mp3
+      // const beat = sound.cloneNode();
+      // beat.play().catch(() => {});
+      sound.play().catch(() => {});
       letter.style.animation = `thqPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards`;
       if (index === 2) {
         const underline = document.getElementById("underline");
