@@ -13,6 +13,33 @@ body {
   min-height: 100vh;
 }
 
+/* Welcome Box */
+#welcome-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000001;
+  flex-direction: column;
+}
+
+#welcome-ok {
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  background: #44874f;
+  color: white;
+  border-radius: 8px;
+}
+
 #preloader {
   background-color: #000000;
   height: 100vh;
@@ -62,7 +89,7 @@ body {
   left: 0;
   width: 170px;
   height: 8px;
-  background-color: red;
+  background-color: #44874f;
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -130,6 +157,9 @@ body {
   }
   #underline {
     width: 125px;
+  }
+  #welcome-ok {
+  font-size: 16px;
 }
 }
 

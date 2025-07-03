@@ -1,30 +1,22 @@
-window.addEventListener("load", function () {
-  const sound = document.getElementById("thq-sound");
-  const letters = [
-    document.getElementById("letter1"),
-    document.getElementById("letter2"),
-    document.getElementById("letter3"),
-  ];
+const sound = document.getElementById("thq-sound");
+const letters = [
+  document.getElementById("letter1"),
+  document.getElementById("letter2"),
+  document.getElementById("letter3"),
+];
 
-  function playAnimation() {
-    letters.forEach((letter, index) => {
-      setTimeout(() => {
-        // sound.currentTime = 0;
-        sound.play();
-        letter.style.animation = `thqPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards`;
+function playAnimation() {
+  letters.forEach((letter, index) => {
+    setTimeout(() => {
+      sound.play().catch(() => {});
+      letter.style.animation = `thqPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards`;
+      if (index === 2) {
+        const underline = document.getElementById("underline");
+        underline.style.animation = "underlineGrow 0.6s ease forwards";
+      }
+    }, index * 600);
+  });
 
-        // When K appears (index 2), also animate the underline
-        if (index === 2) {
-          const underline = document.getElementById("underline");
-          underline.style.animation = "underlineGrow 0.6s ease forwards";
-        }
-      }, index * 600);
-    });
-  }
-
-  playAnimation();
-
-  // Hide preloader after last animation + delay
   setTimeout(() => {
     document.getElementById("preloader").style.opacity = 0;
     setTimeout(() => {
@@ -32,6 +24,11 @@ window.addEventListener("load", function () {
       if (typeof initPageAnimations === "function") initPageAnimations();
     }, 500);
   }, 2400);
+}
+
+document.getElementById("welcome-ok").addEventListener("click", () => {
+  document.getElementById("welcome-box").style.display = "none";
+  playAnimation();
 });
 
 // All your existing page animations
