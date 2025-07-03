@@ -1,7 +1,41 @@
 window.addEventListener("load", function () {
-  // Hide preloader and manage animations
-  document.getElementById("preloader").style.display = "none";
-  document.getElementById("PL").style.display = "none";
+  const sound = document.getElementById("thq-sound");
+  const letters = [
+    document.getElementById("letter1"),
+    document.getElementById("letter2"),
+    document.getElementById("letter3"),
+  ];
+
+  function playAnimation() {
+    letters.forEach((letter, index) => {
+      setTimeout(() => {
+        // sound.currentTime = 0;
+        sound.play();
+        letter.style.animation = `thqPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards`;
+
+        // When K appears (index 2), also animate the underline
+        if (index === 2) {
+          const underline = document.getElementById("underline");
+          underline.style.animation = "underlineGrow 0.6s ease forwards";
+        }
+      }, index * 600);
+    });
+  }
+
+  playAnimation();
+
+  // Hide preloader after last animation + delay
+  setTimeout(() => {
+    document.getElementById("preloader").style.opacity = 0;
+    setTimeout(() => {
+      document.getElementById("preloader").style.display = "none";
+      if (typeof initPageAnimations === "function") initPageAnimations();
+    }, 500);
+  }, 2400);
+});
+
+// All your existing page animations
+function initPageAnimations() {
   const textElement = document.getElementById("T1");
   const textElm = document.getElementById("T2");
 
@@ -34,29 +68,26 @@ window.addEventListener("load", function () {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("visible"); // Add class to the observed element
+          entry.target.classList.add("visible");
         }
       });
     },
-    { threshold: 0.5 } // Trigger when 50% of the element is visible
+    { threshold: 0.5 }
   );
 
-  // Observe each element
   elements.forEach((el) => {
     if (el) observer.observe(el);
   });
 
-  // JavaScript to update the number and trigger the animation
+  // Experience counter animation
   const experienceElement = document.getElementById("experience");
   const targetExperience = 5000;
   let currentExperience = 0;
 
-  // Set up the Intersection Observer
   const observer2 = new IntersectionObserver(
     (entries, observer2) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Start the animation when the target element comes into view
           experienceElement.style.animation = "rise 2s ease-out";
           experienceElement.style.opacity = 1;
           updateExperience();
@@ -65,17 +96,15 @@ window.addEventListener("load", function () {
       });
     },
     { threshold: 0.5 }
-  ); // Adjust threshold as needed
+  );
 
-  // Observe the target element
   observer2.observe(experienceElement);
 
   plus = document.getElementById("plus");
 
   function updateExperience() {
-    const updateInterval = 2; // milliseconds
-    const frames = Math.ceil(2000 / updateInterval); // 2000 ms for 2 seconds animation
-
+    const updateInterval = 2;
+    const frames = Math.ceil(2000 / updateInterval);
     const increment = targetExperience / frames;
 
     const update = setInterval(() => {
@@ -83,13 +112,13 @@ window.addEventListener("load", function () {
         experienceElement.textContent = Math.ceil(currentExperience);
         currentExperience += increment;
       } else {
-        experienceElement.textContent = targetExperience; // Ensure the final value is exact
+        experienceElement.textContent = targetExperience;
         clearInterval(update);
         plus.style.display = "block";
       }
     }, updateInterval);
   }
-});
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   // Function to show the overlay and the div after a specific time
