@@ -1,67 +1,64 @@
-const sound = document.getElementById("thq-sound");
-const letters = [
-  document.getElementById("letter1"),
-  document.getElementById("letter2"),
-  document.getElementById("letter3"),
-];
-
 function playAnimation() {
+  const letters = [
+    document.getElementById("letter1"),
+    document.getElementById("letter2"),
+    document.getElementById("letter3"),
+  ];
+
   letters.forEach((letter, index) => {
+    if (!letter) return; // Ensure element exists
     setTimeout(() => {
-      // const beat = sound.cloneNode();
-      // beat.play().catch(() => {});
-      sound.play().catch(() => {});
       letter.style.animation = `thqPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards`;
       if (index === 2) {
         const underline = document.getElementById("underline");
-        underline.style.animation = "underlineGrow 0.6s ease forwards";
+        if (underline) {
+          underline.style.animation = "underlineGrow 0.6s ease forwards";
+        }
       }
     }, index * 600);
   });
 
   setTimeout(() => {
-    document.getElementById("preloader").style.opacity = 0;
-    setTimeout(() => {
-      document.getElementById("preloader").style.display = "none";
-      if (typeof initPageAnimations === "function") initPageAnimations();
-    }, 500);
+    const preloader = document.getElementById("preloader");
+    if (preloader) {
+      preloader.style.opacity = 0;
+      setTimeout(() => {
+        preloader.style.display = "none";
+        if (typeof initPageAnimations === "function") initPageAnimations();
+      }, 500);
+    }
   }, 2400);
 }
 
-document.getElementById("welcome-ok").addEventListener("click", () => {
-  document.getElementById("welcome-box").style.display = "none";
-  playAnimation();
-});
+playAnimation();
 
-// All your existing page animations
 function initPageAnimations() {
   const textElement = document.getElementById("T1");
   const textElm = document.getElementById("T2");
 
   if (textElement && textElm) {
     textElement.classList.add("animation");
-    setTimeout(() => {
-      textElm.style.opacity = 1;
-      textElement.style.opacity = 1;
-    }, 0);
+    textElm.style.opacity = 1;
+    textElement.style.opacity = 1;
   }
 
-  // IntersectionObserver logic
-  const elements = [
-    document.getElementById("about"),
-    document.getElementById("port"),
-    document.getElementById("working"),
-    document.getElementById("who-am-i"),
-    document.getElementById("what-i-do"),
-    document.getElementById("how-i-do"),
-    document.getElementById("where-am-i"),
-    document.getElementById("one"),
-    document.getElementById("two"),
-    document.getElementById("three"),
-    document.getElementById("four"),
-    document.getElementById("five"),
-    document.getElementById("adj1"),
+  const ids = [
+    "about",
+    "port",
+    "working",
+    "who-am-i",
+    "what-i-do",
+    "how-i-do",
+    "where-am-i",
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "adj1",
   ];
+
+  const elements = ids.map((id) => document.getElementById(id)).filter(Boolean);
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -74,12 +71,13 @@ function initPageAnimations() {
     { threshold: 0.5 }
   );
 
-  elements.forEach((el) => {
-    if (el) observer.observe(el);
-  });
+  elements.forEach((el) => observer.observe(el));
 
-  // Experience counter animation
   const experienceElement = document.getElementById("experience");
+  const plus = document.getElementById("plus");
+
+  if (!experienceElement || !plus) return;
+
   const targetExperience = 5000;
   let currentExperience = 0;
 
@@ -99,21 +97,20 @@ function initPageAnimations() {
 
   observer2.observe(experienceElement);
 
-  plus = document.getElementById("plus");
-
   function updateExperience() {
     const updateInterval = 2;
-    const frames = Math.ceil(2000 / updateInterval);
+    const duration = 2000;
+    const frames = Math.ceil(duration / updateInterval);
     const increment = targetExperience / frames;
 
-    const update = setInterval(() => {
-      if (currentExperience < targetExperience) {
-        experienceElement.textContent = Math.ceil(currentExperience);
-        currentExperience += increment;
-      } else {
+    const interval = setInterval(() => {
+      currentExperience += increment;
+      if (currentExperience >= targetExperience) {
         experienceElement.textContent = targetExperience;
-        clearInterval(update);
         plus.style.display = "block";
+        clearInterval(interval);
+      } else {
+        experienceElement.textContent = Math.ceil(currentExperience);
       }
     }, updateInterval);
   }
