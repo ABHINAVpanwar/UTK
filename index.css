@@ -211,19 +211,19 @@ nav ul a:hover {
 nav ul.active {
   left: 0;
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1400px) {
   header {
     padding: 3.5rem 6rem;
   }
   nav a {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   nav a img {
-    height: 80px;
-    width: 105px;
+    height: 90px;
+    width: 120px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
   header {
     padding: 2.5rem 5rem;
   }
@@ -539,7 +539,37 @@ nav ul.active {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
+  #S1 {
+    gap: 60px;
+  }
+  #T1 {
+    font-size: 5.5vw;
+  }
+  #T2 {
+    font-size: 2.5vw;
+  }
+  #B1 {
+    outline: 0;
+    grid-gap: 10px;
+    border-radius: 5px;
+    flex-shrink: 0;
+    font-size: 1.6vw;
+    gap: 10px;
+    line-height: 1.5;
+    padding: 10px 14px;
+  }
+  #myVideo2 {
+    height: 55vh;
+    width: 75vw;
+  }
+  .down-arrow {
+    bottom: 2vh;
+    font-size: 1.6vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
   #S1 {
     gap: 60px;
   }
@@ -804,9 +834,10 @@ nav ul.active {
   cursor: default;
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1400px) {
   #S2 {
     gap: 0px;
+    height: 90vh;
   }
   #about {
     margin-bottom: 3vh;
@@ -842,7 +873,7 @@ nav ul.active {
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
   #S2 {
     gap: 0px;
   }
@@ -996,7 +1027,7 @@ nav ul.active {
 }
 
 #S3 {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   background-color: black;
   display: flex;
@@ -1126,13 +1157,19 @@ nav ul.active {
   display: none;
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1400px) {
+  #S3 {
+    height: 90vh;
+  }
   .w3-content {
-    width: 900px;
+    max-width: 70vw;
+    width: 90%;
+    margin: 0 auto;
   }
   #port {
     color: white;
-    font-size: 3vw;
+    font-size: 3.1vw;
+    margin-bottom: 30px;
   }
   #control {
     display: flex;
@@ -1143,20 +1180,20 @@ nav ul.active {
   }
   #cntr {
     outline: 0;
-    grid-gap: 8px;
+    grid-gap: 10px;
     align-items: center;
     background: 0 0;
-    border: 1px solid #000;
-    border-radius: 4px;
+    border: 2px solid #000;
+    border-radius: 5px;
     cursor: pointer;
     display: inline-flex;
     flex-shrink: 0;
-    font-size: 1.5vw;
-    gap: 8px;
+    font-size: 1.7vw;
+    gap: 10px;
     justify-content: center;
     line-height: 1.5;
     overflow: hidden;
-    padding: 4px 6px;
+    padding: 5px 7px;
     text-decoration: none;
     text-overflow: ellipsis;
     transition: all 0.14s ease-out;
@@ -1164,25 +1201,25 @@ nav ul.active {
     background-color: white;
   }
   #cntr:hover {
-    box-shadow: 4px 4px 0 gray;
-    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0 gray;
+    transform: translate(-6px, -6px);
   }
   #funk {
     outline: 0;
-    grid-gap: 8px;
+    grid-gap: 10px;
     align-items: center;
     background: 0 0;
-    border: 1px solid #000;
-    border-radius: 4px;
+    border: 2px solid #000;
+    border-radius: 5px;
     cursor: pointer;
     display: inline-flex;
     flex-shrink: 0;
-    font-size: 1.5vw;
-    gap: 8px;
+    font-size: 1.7vw;
+    gap: 10px;
     justify-content: center;
     line-height: 1.5;
     overflow: hidden;
-    padding: 4px 6px;
+    padding: 5px 7px;
     text-decoration: none;
     text-overflow: ellipsis;
     transition: all 0.14s ease-out;
@@ -1190,36 +1227,43 @@ nav ul.active {
     background-color: white;
   }
   #funk:hover {
-    box-shadow: 4px 4px 0 gray;
-    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0 gray;
+    transform: translate(-6px, -6px);
   }
   .f {
-    height: 600px;
-    width: 900px;
+    height: 55vh;
+    width: 70vw;
   }
   #work1 {
     display: none;
-    height: 600px;
-    width: 900px;
+    height: 55vh;
+    width: 70vw;
   }
   #work2 {
     display: none;
-    height: 600px;
-    width: 900px;
+    height: 55vh;
+    width: 70vw;
   }
   #work3 {
     display: none;
-    height: 600px;
-    width: 900px;
+    height: 55vh;
+    width: 70vw;
   }
   #work4 {
     display: none;
-    height: 600px;
-    width: 900px;
+    height: 55vh;
+    width: 70vw;
+  }
+  .w3-display-bottomleft {
+    font-size: 33px !important;
+  }
+  .w3-button {
+    padding: 10px 20px !important;
+    font-size: 20px !important;
   }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1600px) {
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
   .w3-content {
     width: 700px;
   }
@@ -1719,6 +1763,129 @@ nav ul.active {
   font-size: 50px;
   cursor: default;
 }
+/* For screens larger than 1700px */
+@media screen and (min-width: 1700px) {
+  /* Scale up Gallery Container */
+  #gallery-container {
+    max-width: 1800px;
+    padding: 60px;
+  }
+
+  /* Scale up Section Titles */
+  .section-title {
+    font-size: 3rem;
+    margin: 60px 0 30px;
+  }
+
+  /* Scale up Scrollable Gallery */
+  .scrollable-gallery {
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+  }
+
+  .horizontal-scroll {
+    gap: 60px;
+    padding: 25px 0;
+  }
+
+  /* Scale up Video Gallery Grid */
+  #video-gallery {
+    gap: 60px;
+  }
+
+  .gallery-row {
+    gap: 60px;
+  }
+
+  /* Scale up Video Items */
+  .video-item {
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .video-caption {
+    padding: 25px;
+    font-size: 1.6rem;
+  }
+
+  /* Scale up WORK Animation Styles */
+  .box {
+    margin: 0 auto 8vh;
+  }
+
+  .box .inner {
+    width: 450px;
+    height: 150px;
+    line-height: 150px;
+  }
+
+  #working {
+    font-size: 80px;
+  }
+}
+
+/* For screens larger than 1500px */
+@media screen and (min-width: 1500px) and (max-width: 1700px) {
+  /* Scale up Gallery Container */
+  #gallery-container {
+    max-width: 1400px;
+    padding: 30px;
+  }
+
+  /* Scale up Section Titles */
+  .section-title {
+    font-size: 2.2rem;
+    margin: 40px 0 20px;
+  }
+
+  /* Scale up Scrollable Gallery */
+  .scrollable-gallery {
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+  }
+
+  .horizontal-scroll {
+    gap: 40px;
+    padding: 15px 0;
+  }
+
+  /* Scale up Video Gallery Grid */
+  #video-gallery {
+    gap: 40px;
+  }
+
+  .gallery-row {
+    gap: 40px;
+  }
+
+  /* Scale up Video Items */
+  .video-item {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  }
+
+  .video-caption {
+    padding: 18px;
+    font-size: 1.2rem;
+  }
+
+  /* Scale up WORK Animation Styles */
+  .box {
+    margin: 0 auto 6vh;
+  }
+
+  .box .inner {
+    width: 320px;
+    height: 120px;
+    line-height: 120px;
+  }
+
+  #working {
+    font-size: 60px;
+  }
+}
 
 /* ===== Responsive Adjustments ===== */
 @media (max-width: 1200px) {
@@ -1967,7 +2134,7 @@ nav ul.active {
   border-radius: 50px;
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1400px) {
   #S5 {
     height: 100vh;
     width: 100%;
@@ -2026,7 +2193,7 @@ nav ul.active {
   }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1600px) {
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
   #S5 {
     height: 100vh;
     width: 100%;
@@ -2310,9 +2477,9 @@ nav ul.active {
   cursor: default;
 }
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1400px) {
   #S6 {
-    height: 1000px;
+    height: 85vh;
     width: 100%;
     background-color: black;
     display: flex;
@@ -2322,8 +2489,8 @@ nav ul.active {
 
   #gallery {
     position: relative;
-    width: 400px;
-    height: 270px;
+    width: 22vw;
+    height: 25vh;
     transform-style: preserve-3d;
     animation: rotate 50s linear infinite;
   }
@@ -2334,11 +2501,11 @@ nav ul.active {
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 45deg)) translateZ(510px);
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(28vw);
   }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1600px) {
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
   #S6 {
     height: 700px;
     width: 100%;
