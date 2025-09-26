@@ -78,7 +78,7 @@ function initPageAnimations() {
 
   if (!experienceElement || !plus) return;
 
-  const targetExperience = 5000;
+  const targetExperience = 7000;
   let currentExperience = 0;
 
   const observer2 = new IntersectionObserver(
