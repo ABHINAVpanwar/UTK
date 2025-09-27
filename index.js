@@ -27,7 +27,7 @@ function playAnimation() {
         if (typeof initPageAnimations === "function") initPageAnimations();
       }, 500);
     }
-  }, 5000);
+  }, 4000);
 }
 
 playAnimation();
@@ -532,3 +532,46 @@ document
   .addEventListener("click", function () {
     window.open("https://abhinavpanwar.netlify.app", "_blank"); // Replace with your actual portfolio URL
   });
+
+// Function to toggle fullscreen mode
+function toggleFullscreen() {
+  if (!document.fullscreenElement) {
+    // Enter fullscreen
+    if (document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    } else if (document.documentElement.webkitRequestFullscreen) {
+      document.documentElement.webkitRequestFullscreen(); // Safari
+    } else if (document.documentElement.msRequestFullscreen) {
+      document.documentElement.msRequestFullscreen(); // IE/Edge
+    }
+  } else {
+    // Exit fullscreen
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen(); // Safari
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen(); // IE/Edge
+    }
+  }
+}
+
+// Keydown event listener for 'F' key
+document.addEventListener("keydown", function (event) {
+  if (event.key === "f" || event.key === "F") {
+    toggleFullscreen();
+  }
+});
+
+// Optional: Add visual feedback when in fullscreen
+document.addEventListener("fullscreenchange", handleFullscreenChange);
+document.addEventListener("webkitfullscreenchange", handleFullscreenChange);
+document.addEventListener("msfullscreenchange", handleFullscreenChange);
+
+function handleFullscreenChange() {
+  if (document.fullscreenElement) {
+    console.log("Entered fullscreen mode");
+  } else {
+    console.log("Exited fullscreen mode");
+  }
+}
