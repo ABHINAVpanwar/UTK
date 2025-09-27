@@ -27,7 +27,7 @@ function playAnimation() {
         if (typeof initPageAnimations === "function") initPageAnimations();
       }, 500);
     }
-  }, 2400);
+  }, 5000);
 }
 
 playAnimation();
