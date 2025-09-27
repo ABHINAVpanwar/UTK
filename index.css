@@ -1254,26 +1254,26 @@ nav ul.active {
   }
   #work1 {
     display: none;
-    height: 65vh;
+    height: 60vh;
     width: 65vw;
   }
   #work2 {
     display: none;
-    height: 65vh;
+    height: 60vh;
     width: 65vw;
   }
   #work3 {
     display: none;
-    height: 65vh;
+    height: 60vh;
     width: 65vw;
   }
   #work4 {
     display: none;
-    height: 65vh;
+    height: 60vh;
     width: 65vw;
   }
   .w3-display-bottomleft {
-    font-size: 33px !important;
+    font-size: 35px !important;
   }
   .w3-button {
     padding: 10px 20px !important;
