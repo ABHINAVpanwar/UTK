@@ -1180,7 +1180,7 @@ nav ul.active {
     height: 90vh;
   }
   .w3-content {
-    max-width: 70vw;
+    max-width: 65vw;
     width: 90%;
     margin: 0 auto;
   }
@@ -1249,28 +1249,28 @@ nav ul.active {
     transform: translate(-6px, -6px);
   }
   .f {
-    height: 55vh;
-    width: 70vw;
+    height: 60vh;
+    width: 65vw;
   }
   #work1 {
     display: none;
-    height: 55vh;
-    width: 70vw;
+    height: 65vh;
+    width: 65vw;
   }
   #work2 {
     display: none;
-    height: 55vh;
-    width: 70vw;
+    height: 65vh;
+    width: 65vw;
   }
   #work3 {
     display: none;
-    height: 55vh;
-    width: 70vw;
+    height: 65vh;
+    width: 65vw;
   }
   #work4 {
     display: none;
-    height: 55vh;
-    width: 70vw;
+    height: 65vh;
+    width: 65vw;
   }
   .w3-display-bottomleft {
     font-size: 33px !important;
