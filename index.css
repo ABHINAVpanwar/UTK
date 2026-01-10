@@ -238,7 +238,7 @@ nav ul.active {
   }
   nav a img {
     height: 90px;
-    width: 100px;
+    width: 90px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -249,8 +249,8 @@ nav ul.active {
     font-size: 2.5rem;
   }
   nav a img {
-    height: 55px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
@@ -261,7 +261,7 @@ nav ul.active {
     font-size: 2rem;
   }
   nav a img {
-    height: 45px;
+    height: 55px;
     width: 55px;
   }
 }
@@ -274,8 +274,8 @@ nav ul.active {
     font-size: 4rem;
   }
   nav a img {
-    height: 60px;
-    width: 75px;
+    height: 65px;
+    width: 65px;
   }
   nav ul {
     background-color: transparent;
@@ -311,8 +311,8 @@ nav ul.active {
     font-size: 3.5rem;
   }
   nav a img {
-    height: 55px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
   }
 }
 
@@ -2803,6 +2803,7 @@ body {
     font-size: 20px;
   }
 }
+
 
 
 
