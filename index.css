@@ -1180,7 +1180,7 @@ nav ul.active {
     height: 90vh;
   }
   .w3-content {
-    max-width: 65vw;
+    max-width: 55vw;
     width: 90%;
     margin: 0 auto;
   }
@@ -1250,27 +1250,27 @@ nav ul.active {
   }
   .f {
     height: 60vh;
-    width: 60vw;
+    width: 55vw;
   }
   #work1 {
     display: none;
     height: 60vh;
-    width: 60vw;
+    width: 55vw;
   }
   #work2 {
     display: none;
     height: 60vh;
-    width: 60vw;
+    width: 55vw;
   }
   #work3 {
     display: none;
     height: 60vh;
-    width: 60vw;
+    width: 55vw;
   }
   #work4 {
     display: none;
     height: 60vh;
-    width: 60vw;
+    width: 55vw;
   }
   .w3-display-bottomleft {
     font-size: 35px !important;
@@ -2803,5 +2803,6 @@ body {
     font-size: 20px;
   }
 }
+
 
 
