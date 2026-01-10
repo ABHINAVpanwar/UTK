@@ -238,7 +238,7 @@ nav ul.active {
   }
   nav a img {
     height: 90px;
-    width: 110px;
+    width: 100px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -1250,27 +1250,27 @@ nav ul.active {
   }
   .f {
     height: 60vh;
-    width: 65vw;
+    width: 60vw;
   }
   #work1 {
     display: none;
     height: 60vh;
-    width: 65vw;
+    width: 60vw;
   }
   #work2 {
     display: none;
     height: 60vh;
-    width: 65vw;
+    width: 60vw;
   }
   #work3 {
     display: none;
     height: 60vh;
-    width: 65vw;
+    width: 60vw;
   }
   #work4 {
     display: none;
     height: 60vh;
-    width: 65vw;
+    width: 60vw;
   }
   .w3-display-bottomleft {
     font-size: 35px !important;
@@ -2803,4 +2803,5 @@ body {
     font-size: 20px;
   }
 }
+
 
