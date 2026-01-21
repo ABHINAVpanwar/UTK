@@ -234,11 +234,11 @@ nav ul.active {
     padding: 3.5rem 6rem;
   }
   nav a {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   nav a img {
     height: 90px;
-    width: 120px;
+    width: 90px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -249,8 +249,8 @@ nav ul.active {
     font-size: 2.5rem;
   }
   nav a img {
-    height: 55px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
@@ -261,7 +261,7 @@ nav ul.active {
     font-size: 2rem;
   }
   nav a img {
-    height: 45px;
+    height: 55px;
     width: 55px;
   }
 }
@@ -274,8 +274,8 @@ nav ul.active {
     font-size: 4rem;
   }
   nav a img {
-    height: 60px;
-    width: 75px;
+    height: 65px;
+    width: 65px;
   }
   nav ul {
     background-color: transparent;
@@ -311,8 +311,8 @@ nav ul.active {
     font-size: 3.5rem;
   }
   nav a img {
-    height: 55px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
   }
 }
 
@@ -565,7 +565,7 @@ nav ul.active {
     font-size: 5.5vw;
   }
   #T2 {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   #B1 {
     outline: 0;
@@ -1180,7 +1180,7 @@ nav ul.active {
     height: 90vh;
   }
   .w3-content {
-    max-width: 65vw;
+    max-width: 55vw;
     width: 90%;
     margin: 0 auto;
   }
@@ -1249,28 +1249,28 @@ nav ul.active {
     transform: translate(-6px, -6px);
   }
   .f {
-    height: 60vh;
-    width: 65vw;
+    height: 55vh;
+    width: 55vw;
   }
   #work1 {
     display: none;
-    height: 60vh;
-    width: 65vw;
+    height: 55vh;
+    width: 55vw;
   }
   #work2 {
     display: none;
-    height: 60vh;
-    width: 65vw;
+    height: 55vh;
+    width: 55vw;
   }
   #work3 {
     display: none;
-    height: 60vh;
-    width: 65vw;
+    height: 55vh;
+    width: 55vw;
   }
   #work4 {
     display: none;
-    height: 60vh;
-    width: 65vw;
+    height: 55vh;
+    width: 55vw;
   }
   .w3-display-bottomleft {
     font-size: 35px !important;
@@ -2803,3 +2803,8 @@ body {
     font-size: 20px;
   }
 }
+
+
+
+
+
