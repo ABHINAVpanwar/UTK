@@ -234,11 +234,11 @@ nav ul.active {
     padding: 3.5rem 6rem;
   }
   nav a {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   nav a img {
     height: 90px;
-    width: 120px;
+    width: 90px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
@@ -249,8 +249,8 @@ nav ul.active {
     font-size: 2.5rem;
   }
   nav a img {
-    height: 55px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
   }
 }
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
@@ -261,7 +261,7 @@ nav ul.active {
     font-size: 2rem;
   }
   nav a img {
-    height: 45px;
+    height: 55px;
     width: 55px;
   }
 }
@@ -274,11 +274,11 @@ nav ul.active {
     font-size: 4rem;
   }
   nav a img {
-    height: 60px;
-    width: 75px;
+    height: 65px;
+    width: 65px;
   }
   nav ul {
-    background-color: rgba(0, 0, 0, 0.92);
+    background-color: transparent;
     position: fixed;
     left: -100vw;
     top: 80px;
@@ -311,8 +311,8 @@ nav ul.active {
     font-size: 3.5rem;
   }
   nav a img {
-    height: 55px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
   }
 }
 
@@ -565,7 +565,7 @@ nav ul.active {
     font-size: 5.5vw;
   }
   #T2 {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   #B1 {
     outline: 0;
@@ -1007,9 +1007,9 @@ nav ul.active {
 
 @media only screen and (max-width: 600px) {
   #S2 {
+    height: 100vh;
     width: 100%;
-    height: auto;
-    min-height: 160vh;
+    height: 160vh;
   }
   #about {
     color: white;
@@ -1180,7 +1180,7 @@ nav ul.active {
     height: 90vh;
   }
   .w3-content {
-    max-width: 65vw;
+    max-width: 55vw;
     width: 90%;
     margin: 0 auto;
   }
@@ -1249,28 +1249,28 @@ nav ul.active {
     transform: translate(-6px, -6px);
   }
   .f {
-    height: 60vh;
-    width: 65vw;
+    height: 55vh;
+    width: 55vw;
   }
   #work1 {
     display: none;
-    height: 60vh;
-    width: 65vw;
+    height: 55vh;
+    width: 55vw;
   }
   #work2 {
     display: none;
-    height: 60vh;
-    width: 65vw;
+    height: 55vh;
+    width: 55vw;
   }
   #work3 {
     display: none;
-    height: 60vh;
-    width: 65vw;
+    height: 55vh;
+    width: 55vw;
   }
   #work4 {
     display: none;
-    height: 60vh;
-    width: 65vw;
+    height: 55vh;
+    width: 55vw;
   }
   .w3-display-bottomleft {
     font-size: 35px !important;
@@ -1379,7 +1379,7 @@ nav ul.active {
     gap: 40px;
   }
   .w3-content {
-    width: min(500px, 90vw);
+    width: 500px;
   }
   #port {
     color: white;
@@ -1450,11 +1450,10 @@ nav ul.active {
 @media only screen and (max-width: 600px) {
   #S3 {
     gap: 30px;
-    height: auto;
-    min-height: 75vh;
+    height: 75vh;
   }
   .w3-content {
-    width: 90vw;
+    width: 450px;
   }
   #port {
     color: white;
@@ -1521,35 +1520,34 @@ nav ul.active {
   }
   .f {
     height: 250px;
-    width: 90vw;
+    width: 450px;
   }
   #work1 {
     display: none;
     height: 250px;
-    width: 90vw;
+    width: 450px;
   }
   #work2 {
     display: none;
     height: 250px;
-    width: 90vw;
+    width: 450px;
   }
   #work3 {
     display: none;
     height: 250px;
-    width: 90vw;
+    width: 450px;
   }
   #work4 {
     display: none;
     height: 250px;
-    width: 90vw;
+    width: 450px;
   }
 }
 
 @media only screen and (max-width: 500px) {
   #S3 {
     gap: 25px;
-    height: auto;
-    min-height: 60vh;
+    height: 60vh;
   }
   .w3-content {
     width: 90vw;
@@ -1947,7 +1945,7 @@ nav ul.active {
   }
 
   .video-item {
-    width: 260px;
+    width: 300px;
   }
 
   .video-caption {
@@ -2015,8 +2013,6 @@ nav ul.active {
   cursor: default;
   font-size: 40px;
   text-align: center;
-  max-width: 90vw;
-  overflow: hidden;
 }
 
 /* Cursor */
@@ -2276,13 +2272,11 @@ nav ul.active {
 
 @media only screen and (max-width: 900px) {
   #S5 {
-    height: auto;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-color: #0f0f0f;
     color: white;
-    gap: 40px;
-    padding: 40px 20px;
+    gap: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2337,13 +2331,11 @@ nav ul.active {
 
 @media only screen and (max-width: 600px) {
   #S5 {
-    height: auto;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-color: #0f0f0f;
     color: white;
-    gap: 30px;
-    padding: 40px 15px;
+    gap: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2380,10 +2372,8 @@ nav ul.active {
     font-size: 20px;
   }
   #tags {
-    gap: 30px;
+    gap: 60px;
     cursor: pointer;
-    flex-wrap: wrap;
-    padding: 0 10px;
   }
   #one,
   #two,
@@ -2400,13 +2390,11 @@ nav ul.active {
 
 @media only screen and (max-width: 500px) {
   #S5 {
-    height: auto;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-color: #0f0f0f;
     color: white;
-    gap: 25px;
-    padding: 40px 10px;
+    gap: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2443,17 +2431,15 @@ nav ul.active {
     font-size: 20px;
   }
   #tags {
-    gap: 20px;
+    gap: 40px;
     cursor: pointer;
-    flex-wrap: wrap;
-    padding: 0 10px;
   }
   #one,
   #two,
   #three,
   #four,
   #five {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   #five:hover {
@@ -2817,3 +2803,7 @@ body {
     font-size: 20px;
   }
 }
+
+
+
+
